@@ -1,0 +1,14 @@
+.catalog {
+  @include wrapper;
+  padding-top: 27px;
+}
+
+.catalog__list {
+  @include list-default;
+}
+
+.catalog__list {
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}

@@ -1,0 +1,11 @@
+.main-footer {
+  @include wrapper;
+  padding: 40px 0;
+}
+
+.main-footer__logo {
+  margin: 0 auto;
+  width: 128px;
+
+  opacity: 0.2;
+}
