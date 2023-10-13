@@ -1,0 +1,15 @@
+.main-nav {
+  display: none;
+  width: 100%;
+}
+
+.main-nav__list {
+  @include list-default;
+  text-align: center;
+}
+
+.main-nav__link {
+  @include link-default;
+  font-size: 20px;
+  font-weight: 400;
+}

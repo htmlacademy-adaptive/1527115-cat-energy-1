@@ -1,1 +1,49 @@
-// Начните писать стили здесь
+// Базовые свойства
+@import "global/fonts";
+@import "global/__base.scss";
+
+
+// Переменные, миксины
+@import "global/mixins.scss";
+@import "global/variables.scss";
+
+
+// Блоки компонентов
+// Общие
+@import "blocks/page.scss";
+@import "blocks/page__body.scss";
+@import "blocks/main-container.scss";
+@import "blocks/main-header.scss";
+@import "blocks/logo-text.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/button.scss";
+@import "blocks/contacts.scss";
+// Футер
+@import "blocks/main-footer.scss";
+@import "blocks/map.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+
+
+// Главная
+@import "blocks/selection-product.scss";
+@import "blocks/advantages.scss";
+@import "blocks/example.scss";
+@import "blocks/index.scss";
+
+
+// Каталог
+@import "blocks/catalog.scss";
+@import "blocks/card.scss";
+@import "blocks/show-more.scss";
+@import "blocks/additional-product.scss";
+@import "blocks/mini-card.scss";
+@import "blocks/banner.scss";
+
+// Форма
+@import "blocks/form.scss";
+@import "blocks/selection-form.scss";
+@import "blocks/radio.scss";
+@import "blocks/input.scss";
+@import "blocks/textarea.scss";
+@import "blocks/checkbox.scss";

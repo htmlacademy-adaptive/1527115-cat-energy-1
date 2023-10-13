@@ -1,0 +1,32 @@
+@mixin wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@mixin list-default {
+  list-style: none;
+  padding: 0;
+}
+
+@mixin link-default {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+@mixin button {
+  display: block;
+  padding: 10px 44px;
+
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: $base-color;
+  color: #ffffff;
+  border: none;
+}

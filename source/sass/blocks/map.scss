@@ -1,0 +1,8 @@
+.map {
+  @include wrapper;
+  padding: 0;
+}
+
+.map__image {
+  transform: translateX(-20px);
+}

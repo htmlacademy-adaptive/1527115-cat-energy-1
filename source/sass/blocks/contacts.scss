@@ -1,0 +1,24 @@
+.contacts {
+  @include wrapper;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.contacts--accent {
+  background-color: $base-grey;
+}
+
+.contacts__message {
+  line-height: 20px;
+  text-transform: uppercase;
+
+  color: #111111;
+}
+
+.contacts__text {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  margin: 0;
+}

@@ -1,0 +1,12 @@
+.additional-product {
+  @include wrapper;
+}
+
+.additional-product__title {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.additional-product__list {
+  @include list-default;
+}
