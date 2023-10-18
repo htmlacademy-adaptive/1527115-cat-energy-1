@@ -5,9 +5,10 @@
 .map__image {
   transform: translateX(-20px);
   display: block;
+
   @media (min-width: $tablet-width) {
     width: 100%;
-    height: auto;;
+    height: auto;
     transform: translateX(0);
   }
 }

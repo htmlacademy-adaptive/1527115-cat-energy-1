@@ -5,10 +5,6 @@
   z-index: 1;
   background-color: #ffffff;
   grid-column: 1/-1;
-
-  @media (min-width: $tablet-width) {
-    // width: 500px;
-  }
 }
 
 .main-nav__list {
@@ -17,10 +13,10 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  gap: 33px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,12 +32,12 @@
   color: #000000;
 
   @media (min-width: $tablet-width) {
-  font-size: 18px;
-  line-height: 24px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-  font-size: 20px;
-  color: #ffffff;
+    font-size: 20px;
+    color: #ffffff;
   }
 }
