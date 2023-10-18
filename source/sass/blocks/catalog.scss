@@ -1,11 +1,29 @@
 .catalog {
   @include wrapper;
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    @include wrapper-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include wrapper-desktop;
+  }
 }
 
 .catalog__list {
   @include list-default;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+  }
 }

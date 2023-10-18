@@ -1,12 +1,35 @@
 .additional-product {
   @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    @include wrapper-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include wrapper-desktop;
+  }
+}
+
+.additional-product__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto 275px;
+    gap: 81px;
+  }
 }
 
 .additional-product__title {
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .additional-product__list {
   @include list-default;
+  display: grid;
 }

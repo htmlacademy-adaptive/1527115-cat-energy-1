@@ -1,6 +1,23 @@
 .main-footer {
   @include wrapper;
   padding: 40px 0;
+  background-color: $base-grey;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    @include wrapper-tablet;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include wrapper-desktop;
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
 }
 
 .main-footer__logo {
@@ -8,4 +25,9 @@
   width: 128px;
 
   opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    opacity: 1;
+    margin: 0;
+  }
 }

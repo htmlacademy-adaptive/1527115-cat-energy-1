@@ -1,16 +1,32 @@
+.show-more {
+  @media (min-width: $tablet-width) {
+    border: 2px solid $base-grey;
+  }
+}
+
 .show-more__title {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .show-more__text {
-  font-family: "Lato", sans-serif;
-  font-style: 12px;
+  font-family: $additional-font;
+  font-size: 12px;
   line-height: 16px;
-  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .show-more__button {

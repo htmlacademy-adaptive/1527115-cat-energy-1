@@ -1,5 +1,13 @@
 .selection-product {
   @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    @include wrapper-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include wrapper-desktop;
+  }
 }
 
 .selection-product__header {
@@ -10,6 +18,16 @@
   padding-top: 27px;
   padding-right: 20px;
   padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    width: 709px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    text-align: left;
+  }
 }
 
 .selection-product__title {
@@ -20,6 +38,11 @@
   line-height: 36px;
   text-align: center;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    @include title-tablet;
+    margin-bottom: 40px;
+  }
 }
 
 .selection-product__slogan {
@@ -30,16 +53,46 @@
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .selection-product__button {
   @include button;
+  outline: 2px solid;
+
+  @media (min-width: $tablet-width) {
+    @include button-tablet;
+    width: 192px;
+    margin-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
 }
 
 .selection-product__list {
   @include list-default;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    gap: 30px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 71px;
+  }
 }
 
 .selection-product__item {
@@ -50,18 +103,32 @@
   text-transform: uppercase;
   line-height: 37px;
   font-weight: 400;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .selection-product__item-description {
-  font-family: "Lato", sans-serif;
+  font-family: $additional-font;
   font-size: 14px;
   font-weight: 900;
   line-height: 18px;
-  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    @include text-tablet;
+  }
 }
 
 .selection-product__item-link {
   @include link-default;
-  font-size: 16px;
   line-height: 16px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

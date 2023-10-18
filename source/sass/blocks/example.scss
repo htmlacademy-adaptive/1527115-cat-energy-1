@@ -2,6 +2,14 @@
   @include wrapper;
   background-color: $base-grey;
   padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    @include wrapper-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include wrapper-desktop;
+  }
 }
 
 .example__title {
@@ -10,13 +18,32 @@
   line-height: 40px;
   margin: 0;
   margin-bottom: 40px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    @include title-tablet;
+  }
 }
 
 .example__description {
-  font-family: "Lato", sans-serif;
+  font-family: $additional-font;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include text-tablet;
+  }
+}
+
+.example__expenses {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
