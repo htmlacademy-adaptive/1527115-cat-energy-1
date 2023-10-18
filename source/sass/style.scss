@@ -1,49 +1,49 @@
 // Базовые свойства
 @import "global/fonts";
-@import "global/__base.scss";
+@import "global/utils";
 
 
 // Переменные, миксины
-@import "global/mixins.scss";
-@import "global/variables.scss";
+@import "global/mixins";
+@import "global/variables";
 
 
 // Блоки компонентов
 // Общие
-@import "blocks/page.scss";
-@import "blocks/page__body.scss";
-@import "blocks/main-container.scss";
-@import "blocks/main-header.scss";
-@import "blocks/logo-text.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/button.scss";
-@import "blocks/contacts.scss";
+@import "blocks/page";
+@import "blocks/main-header";
+// @import "blocks/logo-text";
+@import "blocks/main-nav";
+@import "blocks/main-container";
+// @import "blocks/button";
+@import "blocks/contacts";
 // Футер
-@import "blocks/main-footer.scss";
-@import "blocks/map.scss";
-@import "blocks/social.scss";
-@import "blocks/copyright.scss";
+@import "blocks/main-footer";
+@import "blocks/map";
+@import "blocks/social";
+// @import "blocks/copyright";
 
 
 // Главная
-@import "blocks/selection-product.scss";
-@import "blocks/advantages.scss";
-@import "blocks/example.scss";
-@import "blocks/index.scss";
+@import "blocks/selection-product";
+@import "blocks/advantages";
+@import "blocks/example";
+@import "blocks/index";
+// @import "blocks/index";
 
 
 // Каталог
-@import "blocks/catalog.scss";
-@import "blocks/card.scss";
-@import "blocks/show-more.scss";
-@import "blocks/additional-product.scss";
-@import "blocks/mini-card.scss";
-@import "blocks/banner.scss";
+@import "blocks/catalog";
+@import "blocks/card";
+@import "blocks/show-more";
+@import "blocks/additional-product";
+@import "blocks/mini-card";
+@import "blocks/banner";
 
 // Форма
-@import "blocks/form.scss";
-@import "blocks/selection-form.scss";
-@import "blocks/radio.scss";
-@import "blocks/input.scss";
-@import "blocks/textarea.scss";
-@import "blocks/checkbox.scss";
+@import "blocks/form";
+@import "blocks/selection-form";
+// @import "blocks/radio";
+// @import "blocks/input";
+// @import "blocks/textarea";
+// @import "blocks/checkbox";

@@ -1,5 +1,12 @@
 .selection-form {
   display: grid;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .selection-form__title {
@@ -8,4 +15,12 @@
   font-weight: 400;
   text-transform: uppercase;
   padding-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }

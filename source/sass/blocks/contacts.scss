@@ -1,7 +1,19 @@
 .contacts {
   @include wrapper;
   padding-top: 26px;
-  padding-bottom: 26px;
+  // padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    @include wrapper-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include wrapper-desktop;
+  }
+}
+
+.contacts__wrapper {
+  padding: 61px 70px;
 }
 
 .contacts--accent {
@@ -11,14 +23,22 @@
 .contacts__message {
   line-height: 20px;
   text-transform: uppercase;
-
   color: #111111;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__text {
-  font-family: "Lato", sans-serif;
+  font-family: $additional-font;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

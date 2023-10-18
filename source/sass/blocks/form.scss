@@ -4,23 +4,43 @@
   text-transform: uppercase;
 }
 
-.form__lable {
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+.form__fieldset {
+  color: #444444;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-.form__fieldset {
-  display: grid;
+.form__fieldset__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .form__title {
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form__button {
   @include button;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-base;
+}
+
+.form__note {
+  font-family: $additional-font;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+  margin-top: 21px;
+  margin-bottom: 6px;
 }
