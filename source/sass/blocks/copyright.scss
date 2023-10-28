@@ -1,0 +1,19 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    gap: 23px;
+  }
+}
+
+.copyright__link {
+  @include link-default;
+  text-transform: none;
+}
+
+.copyright__logo {
+  display: block;
+  color: #666666;
+}

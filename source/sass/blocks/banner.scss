@@ -1,19 +1,45 @@
 .banner {
-  @include wrapper;
-  margin-bottom: 35px;
+  margin: 35px 0;
   padding: 0;
-  padding-top: 187px;
+  padding-top: 59px;
   background-color: $base-color;
-  // Временный размер. Убрать после добавления фонового изображения
-  height: 290px;
+  background-image: url("/img/banner.jpg");
+  min-height: 290px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    @include wrapper-tablet;
+    display: grid;
+    margin-top: 70px;
+    margin-bottom: 75px;
+    padding: 0;
+    padding-left: 77px;
+    grid-template-columns: 1fr 1fr;
+    min-height: 200px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    width: 275px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 245px;
+    min-height: 288px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.banner img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: center;
   }
 }
 
@@ -25,4 +51,12 @@
   color: #ffffff;
   width: 161px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }
