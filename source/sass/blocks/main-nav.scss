@@ -1,22 +1,42 @@
 .main-nav {
-  // display: none;
+  position: absolute;
+  top: 65px;
   width: 100%;
   margin: 0 auto;
   z-index: 1;
   background-color: #ffffff;
   grid-column: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    align-self: start;
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-header__toggle--opened ~ .main-nav {
+    display: block;
+  }
+
+  .main-header__toggle--closed ~ .main-nav {
+    display: none;
+  }
 }
 
 .main-nav__list {
   @include list-default;
   text-align: center;
   margin: 0;
+  border-top: 1px solid $base-grey;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: end;
     gap: 33px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,20 +44,60 @@
   }
 }
 
-.main-nav__link {
+.main-nav__item {
+  @media (min-width: $tablet-width) {
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: $base-color;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--active::after {
+      background: #ffffff;
+    }
+  }
+}
+
+
+.main-nav__item a {
   @include link-default;
+  display: block;
   font-size: 20px;
   line-height: 20px;
   font-weight: 400;
+  padding: 24px 0;
   color: #000000;
+  border-bottom: 1px solid $base-grey;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    margin-top: 25px;
+    padding: 14px 0 12px 0;
+    border-bottom: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     color: #ffffff;
+    margin: 0;
   }
 }

@@ -3,21 +3,42 @@
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    @include wrapper-tablet;
+    padding-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    @include wrapper-desktop;
+    padding-top: 74px;
   }
 }
 
 .main-container__title {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   margin: 0;
-  margin-bottom: 41px;
+  padding-bottom: 41px;
+  color: #000000;
 
   @media (min-width: $tablet-width) {
     @include title-tablet;
+    padding-bottom: 84px;
+  }
+}
+
+.main-container__form-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 37px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    @include title-tablet;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 55px;
   }
 }

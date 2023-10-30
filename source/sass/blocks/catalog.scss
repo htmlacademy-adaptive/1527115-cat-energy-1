@@ -1,13 +1,15 @@
 .catalog {
   @include wrapper;
   padding-top: 27px;
+  border-top: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    @include wrapper-tablet;
+    border-top: none;
+    padding-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    @include wrapper-desktop;
+    margin-top: 74px;
   }
 }
 
@@ -15,15 +17,28 @@
   @include list-default;
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
   display: grid;
+  border-top: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+    border-top: none;
+    padding-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 80px;
+    padding-bottom: 76px;
+  }
+}
+
+.catalog__item {
+  border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
   }
 }

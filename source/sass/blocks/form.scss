@@ -6,11 +6,37 @@
 
 .form__fieldset {
   color: #444444;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+  align-items: center;
+  border: none;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.form__fieldset--text {
+  padding-bottom: 24px;
+}
+
+.form__group {
+  display: flex;
+  height: 45px;
+  gap: 13px;
+}
+
+.form__input {
+  font-family: $font-base;
+  font-size: 16px;
+  justify-self: stretch;
+  padding: 14px 15px 13px;
+}
+
+.form__label {
+  align-self: center;
 }
 
 .form__fieldset__wrapper {
@@ -20,11 +46,22 @@
   }
 }
 
+.form__list {
+  @include list-default;
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 19px;
+  display: grid;
+  gap: 13px;
+}
+
 .form__title {
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
   color: #000000;
+  margin: 0;
+  padding-top: 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
