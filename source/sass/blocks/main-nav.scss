@@ -12,6 +12,10 @@
     position: relative;
     top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(255, 255, 255, 0);
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -38,10 +42,6 @@
     gap: 33px;
     border: none;
   }
-
-  @media (min-width: $desktop-width) {
-    background-color: rgba(104, 183, 56, 0.85);
-  }
 }
 
 .main-nav__item {
@@ -60,10 +60,16 @@
       }
     }
   }
+}
 
+.main-nav__item--light.main-nav__item {
   @media (min-width: $desktop-width) {
     &--active::after {
       background: #ffffff;
+    }
+
+    a {
+      color: #ffffff;
     }
   }
 }
@@ -97,7 +103,6 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
-    color: #ffffff;
     margin: 0;
   }
 }
