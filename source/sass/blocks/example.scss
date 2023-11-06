@@ -2,6 +2,7 @@
   @include wrapper;
   background-color: $base-grey;
   padding-top: 25px;
+  padding-bottom: 40px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -10,9 +11,8 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-areas:
-      "title img"
-      "description img";
+    grid-auto-flow: column;
+    grid-template-rows: auto 1fr;
   }
 }
 
@@ -28,10 +28,6 @@
     @include title-tablet;
     margin-bottom: 60px;
   }
-
-  @media (min-width: $desktop-width) {
-    grid-area: title;
-  }
 }
 
 .example__wrapper {
@@ -46,9 +42,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-area: description;
     grid-template-columns: 436px;
-    grid-template-rows: 1fr 1fr 1fr;
   }
 }
 
@@ -65,6 +59,7 @@
 
   @media (min-width: $tablet-width) {
     @include text-tablet;
+    margin-bottom: 14px;
     grid-column: 1/-1;
   }
 
@@ -118,14 +113,21 @@
 }
 
 .example__compar {
-  padding-bottom: 40px;
+  width: 100%;
+  min-height: 256px;
   position: relative;
+  overflow: hidden;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
+    width: 560px;
+    margin: 0 auto;
     margin-bottom: 101px;
     padding: 0;
+    min-height: 512px;
 
+
+    // Перенести фон в родителя
     &::after {
       content: "";
       background-color: $base-grey;
@@ -141,12 +143,38 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 101px;
     padding: 0;
-    grid-area: img;
+    grid-row: 1/-1;
 
     &::after {
       content: none;
     }
   }
+}
+
+.example__compar-image-wrapper--before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  // z-index: 2;
+}
+
+.example__compar-image-wrapper--after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+}
+
+.example__compar-image-wrapper--after img {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .example__compar-image {
@@ -156,6 +184,41 @@
 
 .example__compar-switch {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
+  transform: translateX(-2px);
+  width: 4px;
+  height: 100%;
+  background-color: #666666;
+  border-radius: 2px;
+  z-index: 3;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/switcher.svg");
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    background-color: $base-color;
+
+    &::after {
+      background-image: url("../img/switcher-hover.svg");
+    }
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    opacity: 0.6;
+
+    &::after {
+      background-image: url("../img/switcher-active.svg");
+    }
+  }
 }

@@ -15,12 +15,11 @@
 
   @media (min-width: $desktop-width) {
     height: 59px;
-    margin-top: 55px;
+    padding-top: 55px;
   }
 }
 
 .main-header__logo {
-  display: grid;
   padding: 14px 0;
   margin-left: 20px;
 
@@ -29,6 +28,10 @@
     margin: 0;
     padding: 0;
   }
+}
+
+.main-header__logo img {
+  display: block;
 }
 
 .main-header__toggle {

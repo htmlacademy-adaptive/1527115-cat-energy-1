@@ -21,10 +21,7 @@
 .card__wrapper {
   display: grid;
   row-gap: 14px;
-  grid-template-areas:
-    "img title"
-    "img list"
-    "btn btn";
+  grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
 
@@ -35,7 +32,7 @@
 }
 
 .card__image-wrapper {
-  grid-area: img;
+  grid-row: 1/3;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 22px;
@@ -59,7 +56,6 @@
   text-transform: uppercase;
   color: #222222;
   margin: 0;
-  grid-area: title;
   width: 76px;
 
   @media (min-width: $tablet-width) {
@@ -76,7 +72,6 @@
 }
 
 .card__list {
-  grid-area: list;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -107,7 +102,7 @@
 
 .card__button {
   @include button;
-  grid-area: btn;
+  grid-column: 1/-1;
   margin-top: 3px;
 
   @media (min-width: $tablet-width) {

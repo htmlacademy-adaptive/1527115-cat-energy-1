@@ -27,6 +27,7 @@
 
 .advantages__list {
   @include list-default;
+  counter-reset: num;
   margin: 0;
   margin-top: 40px;
   display: grid;
@@ -62,15 +63,17 @@
 }
 
 .advantages__item--benefit {
-  background-image: url("/img/benefit-icon.svg");
+  background-image: url("../img/benefit-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
   @media (min-width: $tablet-width) {
+    background-image: url("../img/benefit-icon-tablet.svg");
     background-position: 0 40px;
 
     &::before {
-      content: "1";
+      content: counter(num);
+      counter-increment: num;
       position: absolute;
       font-size: 280px;
       color: $base-grey;
@@ -83,15 +86,17 @@
 }
 
 .advantages__item--product-type {
-  background-image: url("/img/product-type-icon.svg");
+  background-image: url("../img/product-type-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
   @media (min-width: $tablet-width) {
+    background-image: url("../img/product-type-icon-tablet.svg");
     background-position: 0 40px;
 
     &::before {
-      content: "2";
+      content: counter(num);
+      counter-increment: num;
       position: absolute;
       font-size: 280px;
       color: $base-grey;
@@ -104,15 +109,17 @@
 }
 
 .advantages__item--reblace {
-  background-image: url("/img/reblace-icon.svg");
+  background-image: url("../img/reblace-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
   @media (min-width: $tablet-width) {
+    background-image: url("../img/reblace-icon-tablet.svg");
     background-position: 0 40px;
 
     &::before {
-      content: "3";
+      content: counter(num);
+      counter-increment: num;
       position: absolute;
       font-size: 280px;
       color: $base-grey;
@@ -125,15 +132,17 @@
 }
 
 .advantages__item--result {
-  background-image: url("/img/result-icon.svg");
+  background-image: url("../img/result-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
   @media (min-width: $tablet-width) {
+    background-image: url("../img/result-icon-tablet.svg");
     background-position: 0 40px;
 
     &::before {
-      content: "4";
+      content: counter(num);
+      counter-increment: num;
       position: absolute;
       font-size: 280px;
       color: $base-grey;

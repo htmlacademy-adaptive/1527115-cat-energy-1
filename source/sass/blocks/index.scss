@@ -15,11 +15,13 @@
 
   @media (min-width: $tablet-width) {
     // Временная рамка, позже заменить на svg
-    border: 1px solid #cdcdcd;
+    // border: 1px solid #cdcdcd;
 
 
     &::before {
-      content: none;
+      background-image: url("/img/weight-back-tablet.svg");
+      width: 162px;
+      height: 72px;
     }
   }
 }
@@ -34,6 +36,7 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    margin-bottom: 11px;
   }
 }
 
