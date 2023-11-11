@@ -62,7 +62,7 @@
   }
 }
 
-.main-nav__item--light.main-nav__item {
+.main-nav__list--light .main-nav__item {
   @media (min-width: $desktop-width) {
     &--active::after {
       background: #ffffff;
@@ -73,7 +73,6 @@
     }
   }
 }
-
 
 .main-nav__item a {
   @include link-default;

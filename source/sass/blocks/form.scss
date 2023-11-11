@@ -16,7 +16,6 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    // outline: 1px solid red;
   }
 }
 
@@ -61,7 +60,7 @@
   }
 }
 
-.form__fieldset-radio-group {
+.form__fieldset--radio-group {
   @media (min-width: $tablet-width) {
     border: 1px solid #e7e7e7;
     padding: 23px 27px 27px;
@@ -96,7 +95,7 @@
   }
 }
 
-.form__fieldset-group {
+.form__fieldset--group {
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
@@ -124,7 +123,7 @@
   }
 }
 
-.form__textarea {
+.form__comment {
   font-family: $font-base;
   font-size: 16px;
   text-transform: uppercase;

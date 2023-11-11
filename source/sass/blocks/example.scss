@@ -112,7 +112,7 @@
   margin: 0;
 }
 
-.example__compar {
+.example__compare {
   width: 100%;
   min-height: 256px;
   position: relative;
@@ -125,7 +125,6 @@
     margin-bottom: 101px;
     padding: 0;
     min-height: 512px;
-
 
     // Перенести фон в родителя
     &::after {
@@ -151,17 +150,16 @@
   }
 }
 
-.example__compar-image-wrapper--before {
+.example__compare-image-wrapper--before {
   position: absolute;
   left: 0;
   top: 0;
   overflow: hidden;
   width: 50%;
   height: 100%;
-  // z-index: 2;
 }
 
-.example__compar-image-wrapper--after {
+.example__compare-image-wrapper--after {
   position: absolute;
   right: 0;
   top: 0;
@@ -170,19 +168,19 @@
   height: 100%;
 }
 
-.example__compar-image-wrapper--after img {
+.example__compare-image-wrapper--after img {
   text-align: center;
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.example__compar-image {
+.example__compare-image {
   display: block;
   margin: 0 auto;
 }
 
-.example__compar-switch {
+.example__compare-switch {
   position: absolute;
   top: 0;
   left: 50%;
