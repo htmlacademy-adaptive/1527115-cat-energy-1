@@ -63,13 +63,22 @@
 }
 
 .advantages__item--benefit {
-  // background-image: url("../img/benefit-icon.svg");
   background-image: url("../img/sprite.svg#benefit-icon");
   background-repeat: no-repeat;
   background-position: 0 0;
 
+  &::after {
+    content: "";
+    background-color: $base-color;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
   @media (min-width: $tablet-width) {
-    // background-image: url("../img/benefit-icon-tablet.svg");
     background-image: url("../img/sprite.svg#benefit-icon-tablet");
     background-position: 0 40px;
 
@@ -84,17 +93,32 @@
       bottom: 50%;
       z-index: -1;
     }
+
+    &::after {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
   }
 }
 
 .advantages__item--product-type {
-  // background-image: url("../img/product-type-icon.svg");
   background-image: url("../img/sprite.svg#product-type-icon");
   background-repeat: no-repeat;
   background-position: 0 0;
 
+  &::after {
+    content: "";
+    background-color: $base-color;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
   @media (min-width: $tablet-width) {
-    // background-image: url("../img/product-type-icon-tablet.svg");
     background-image: url("../img/sprite.svg#product-type-icon-tablet");
     background-position: 0 40px;
 
@@ -109,17 +133,32 @@
       bottom: 50%;
       z-index: -1;
     }
+
+    &::after {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
   }
 }
 
 .advantages__item--reblace {
-  // background-image: url("../img/reblace-icon.svg");
   background-image: url("../img/sprite.svg#reblace-icon");
   background-repeat: no-repeat;
   background-position: 0 0;
 
+  &::after {
+    content: "";
+    background-color: $base-color;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
   @media (min-width: $tablet-width) {
-    // background-image: url("../img/reblace-icon-tablet.svg");
     background-image: url("../img/sprite.svg#reblace-icon-tablet");
     background-position: 0 40px;
 
@@ -134,17 +173,32 @@
       bottom: 50%;
       z-index: -1;
     }
+
+    &::after {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
   }
 }
 
 .advantages__item--result {
-  // background-image: url("../img/result-icon.svg");
   background-image: url("../img/sprite.svg#result-icon");
   background-repeat: no-repeat;
   background-position: 0 0;
 
+  &::after {
+    content: "";
+    background-color: $base-color;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
   @media (min-width: $tablet-width) {
-    // background-image: url("../img/result-icon-tablet.svg");
     background-image: url("../img/sprite.svg#result-icon-tablet");
     background-position: 0 40px;
 
@@ -158,6 +212,12 @@
       left: 118px;
       bottom: 50%;
       z-index: -1;
+    }
+
+    &::after {
+      width: 80px;
+      height: 80px;
+      top: 40px;
     }
   }
 }

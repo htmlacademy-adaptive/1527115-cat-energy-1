@@ -24,25 +24,23 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <nav class="main-nav">
-        <!-- <div class="main-nav__wrapper"> -->
-          <ul class="main-nav__list main-nav__list--light">
-            <li class="main-nav__item main-nav__item--active main-nav__item--light">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--light">
-              <a href="catalog.html">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--light">
-              <a href="form.html">
-                Подобрать программу
-              </a>
-            </li>
-          </ul>
-        <!-- </div> -->
+        <ul class="main-nav__list main-nav__list--light">
+          <li class="main-nav__item main-nav__item--active main-nav__item--light">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--light">
+            <a href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--light">
+            <a href="form.html">
+              Подобрать программу
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main-container">
@@ -64,19 +62,23 @@
           <a class="selection-product__button" href="#">Подобрать программу</a>
         </header>
         <ul class="selection-product__list">
-          <li class="selection-product__item selection-product__item--slim">
-            <h2 class="selection-product__item-title">Похудение</h2>
-            <p class="selection-product__item-description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="selection-product__item-link" href="#">
-              Каталог slim
-            </a>
+          <li class="selection-product__item">
+            <div class="selection-product__item-wrapper selection-product__item-wrapper--slim">
+              <h2 class="selection-product__item-title">Похудение</h2>
+              <p class="selection-product__item-description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="selection-product__item-link" href="#">
+                Каталог slim
+              </a>
+            </div>
           </li>
-          <li class="selection-product__item selection-product__item--pro">
-            <h2 class="selection-product__item-title">Набор массы</h2>
-            <p class="selection-product__item-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="selection-product__item-link" href="#">
-              Каталог pro
-            </a>
+          <li class="selection-product__item">
+            <div class="selection-product__item-wrapper selection-product__item-wrapper--pro">
+              <h2 class="selection-product__item-title">Набор массы</h2>
+              <p class="selection-product__item-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="selection-product__item-link" href="#">
+                Каталог pro
+              </a>
+            </div>
           </li>
         </ul>
       </section>
@@ -148,7 +150,11 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__logo">
-        <img class="main-footer__logo-text logo-text" src="img/logo-text.svg" width="128" height="24" alt="Cat energy">
+        <a class="main-footer__logo-link" href="index.html">
+          <svg class="main-footer__logo-text logo-text" width="128" height="24">
+            <use href="img/sprite.svg#logo-text"></use>
+          </svg>
+        </a>
       </div>
       <div class="main-footer__social social">
         <ul class="social__list">

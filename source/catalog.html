@@ -72,7 +72,7 @@
                   <dt class="card__meaning">700 ₽</dt>
                 </div>
               </dl>
-              <a class="card__button">Заказать</a>
+              <a class="card__button" href="#">Заказать</a>
             </div>
           </li>
           <li class="catalog__item card">
@@ -99,7 +99,7 @@
                   <dt class="card__meaning">1000 ₽</dt>
                 </div>
               </dl>
-              <a class="card__button">Заказать</a>
+              <a class="card__button" href="#">Заказать</a>
             </div>
           </li>
           <li class="catalog__item card">
@@ -126,7 +126,7 @@
                   <dt class="card__meaning">700 ₽</dt>
                 </div>
               </dl>
-              <a class="card__button">Заказать</a>
+              <a class="card__button" href="#">Заказать</a>
             </div>
           </li>
           <li class="catalog__item card">
@@ -153,7 +153,7 @@
                   <dt class="card__meaning">1000 ₽</dt>
                 </div>
               </dl>
-              <a class="card__button">Заказать</a>
+              <a class="card__button" href="#">Заказать</a>
             </div>
           </li>
           <li class="catalog__item card">
@@ -180,7 +180,7 @@
                   <dt class="card__meaning">400 ₽</dt>
                 </div>
               </dl>
-              <a class="card__button">Заказать</a>
+              <a class="card__button" href="#">Заказать</a>
             </div>
           </li>
           <li class="catalog__item card">
@@ -207,7 +207,7 @@
                   <dt class="card__meaning">700 ₽</dt>
                 </div>
               </dl>
-              <a class="card__button">Заказать</a>
+              <a class="card__button" href="#">Заказать</a>
             </div>
           </li>
           <li class="catalog__item card">
@@ -234,7 +234,7 @@
                   <dt class="card__meaning">500 ₽</dt>
                 </div>
               </dl>
-              <a class="card__button">Заказать</a>
+              <a class="card__button" href="#">Заказать</a>
             </div>
           </li>
           <li class="catalog__item show-more">
@@ -245,7 +245,7 @@
               <h2 class="show-more__title">Показать еще 100500 товаров</h2>
               <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
             </div>
-            <a class="show-more__button">Показать все</a>
+            <a class="show-more__button" href="#">Показать все</a>
           </li>
         </ul>
       </section>
@@ -261,7 +261,7 @@
                   <dt class="mini-card__meaning">200 ₽</dt>
                 </div>
               </dl>
-              <a class="mini-card__button">Заказать</a>
+              <a class="mini-card__button" href="#">Заказать</a>
             </li>
             <li class="additional-product__item mini-card">
               <h3 class="mini-card__title">Питьевая вода</h3>
@@ -271,7 +271,7 @@
                   <dt class="mini-card__meaning">50 ₽</dt>
                 </div>
               </dl>
-              <a class="mini-card__button">Заказать</a>
+              <a class="mini-card__button" href="#">Заказать</a>
             </li>
             <li class="additional-product__item mini-card">
               <h3 class="mini-card__title">Молоко</h3>
@@ -281,7 +281,7 @@
                   <dt class="mini-card__meaning">100 ₽</dt>
                 </div>
               </dl>
-              <a class="mini-card__button">Заказать</a>
+              <a class="mini-card__button" href="#">Заказать</a>
             </li>
             <li class="additional-product__item mini-card">
               <h3 class="mini-card__title">Витамины</h3>
@@ -291,12 +291,11 @@
                   <dt class="mini-card__meaning">300 ₽</dt>
                 </div>
               </dl>
-              <a class="mini-card__button">Заказать</a>
+              <a class="mini-card__button" href="#">Заказать</a>
             </li>
           </ul>
           <div class="banner">
             <h2 class="visually-hidden">Специальное предложение</h2>
-            <!-- <img src="img/banner-image.svg" width="78" height="80" alt="Подарок"> -->
             <svg width="78" height="80" viewBox="0 0 78 80">
               <use href="img/sprite.svg#banner-icon"></use>
             </svg>
@@ -318,7 +317,11 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__logo">
-        <img class="main-footer__logo-text logo-text" src="img/logo-text.svg" width="128" height="24" alt="Cat energy">
+        <a class="main-footer__logo-link" href="index.html">
+          <svg class="main-footer__logo-text logo-text" width="128" height="24">
+            <use href="img/sprite.svg#logo-text"></use>
+          </svg>
+        </a>
       </div>
       <div class="main-footer__social social">
         <ul class="social__list">
