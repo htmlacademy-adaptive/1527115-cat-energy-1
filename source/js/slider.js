@@ -1,9 +1,9 @@
-const slider = document.querySelector('.example__compar');
-const before = slider.querySelector('.example__compar-image-wrapper--before');
-const after = slider.querySelector('.example__compar-image-wrapper--after');
+const slider = document.querySelector(".example__compare");
+const before = slider.querySelector(".example__compare-image-wrapper--before");
+const after = slider.querySelector(".example__compare-image-wrapper--after");
 const beforeImage = before.querySelector("img");
 const afterImage = after.querySelector("img");
-const switcher = slider.querySelector(".example__compar-switch");
+const switcher = slider.querySelector(".example__compare-switch");
 const body = document.body;
 
 let isActive = false;
@@ -46,10 +46,9 @@ slider.addEventListener("mouseleave", () => {
 slider.addEventListener("mousemove", (e) => {
   if (!isActive) {
     return;
-  };
+  }
 
   let x = e.pageX;
-
 
   x -= slider.getBoundingClientRect().left;
   beforeAfterSlider(x);
@@ -71,7 +70,7 @@ slider.addEventListener("touchcancel", () => {
 slider.addEventListener("touchmove", (e) => {
   if (!isActive) {
     return;
-  };
+  }
 
   let x;
   let i;

@@ -4,6 +4,8 @@
   @media (min-width: $tablet-width) {
     border: 2px solid $base-grey;
     padding: 28px 37px 40px 37px;
+    height: calc(100% - 70px - 81px);
+    align-self: end;
   }
 }
 

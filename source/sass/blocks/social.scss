@@ -8,4 +8,12 @@
 
 .social__link {
   color: #666666;
+
+  &:hover {
+    color: $base-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

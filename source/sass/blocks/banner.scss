@@ -3,7 +3,7 @@
   padding: 0;
   padding-top: 59px;
   background-color: $base-color;
-  background-image: url("/img/banner.jpg");
+  background-image: url("../img/banner.jpg");
   min-height: 290px;
   box-sizing: border-box;
 
@@ -14,12 +14,12 @@
     padding: 0;
     padding-left: 77px;
     min-height: 200px;
-    background-image: url("/img/banner-tablet.jpg");
+    background-image: url("../img/banner-tablet.jpg");
     grid-template-columns: 1fr 1fr;
     align-items: center;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/banner-tablet@2x.jpg");
+      background-image: url("../img/banner-tablet@2x.jpg");
     }
   }
 
@@ -28,17 +28,17 @@
     min-height: 288px;
     padding: 0;
     margin: 0;
-    background-image: url("/img/banner-desktop.jpg");
+    background-image: url("../img/banner-desktop.jpg");
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/banner-desktop@2x.jpg");
+      background-image: url("../img/banner-desktop@2x.jpg");
     }
   }
 }
 
-.banner img {
+.banner svg {
   display: block;
   margin: 0 auto;
   padding-bottom: 48px;

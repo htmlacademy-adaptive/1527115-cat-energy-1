@@ -5,7 +5,7 @@
 
   &::before {
     content: "";
-    background-image: url("/img/weight-back.svg");
+    background-image: url("../img/sprite.svg#weight-back");
     position: absolute;
     width: 124px;
     height: 56px;
@@ -14,12 +14,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    // Временная рамка, позже заменить на svg
-    // border: 1px solid #cdcdcd;
-
-
     &::before {
-      background-image: url("/img/weight-back-tablet.svg");
+      background-image: url("../img/sprite.svg#weight-back-tablet");
       width: 162px;
       height: 72px;
     }
