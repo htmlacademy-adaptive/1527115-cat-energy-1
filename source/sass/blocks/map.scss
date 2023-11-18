@@ -1,15 +1,19 @@
 .map {
   padding: 0;
+  position: relative;
+  width: 100vw;
+  left: calc(50% - 50vw);
 
   @media (min-width: $tablet-width) {
     height: 400px;
-    overflow: hidden;
+    // overflow: hidden;
   }
 }
 
 .map__iframe {
-  transform: translateX(-20px);
+  // transform: translateX(-20px);
   display: block;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     width: 100%;

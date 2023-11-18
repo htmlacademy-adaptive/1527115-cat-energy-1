@@ -5,7 +5,7 @@
 
   &::before {
     content: "";
-    background-image: url("../img/sprite.svg#weight-back");
+    background-image: url("../img/icons/sprite.svg#weight-back");
     position: absolute;
     width: 124px;
     height: 56px;
@@ -15,7 +15,7 @@
 
   @media (min-width: $tablet-width) {
     &::before {
-      background-image: url("../img/sprite.svg#weight-back-tablet");
+      background-image: url("../img/icons/sprite.svg#weight-back-tablet");
       width: 162px;
       height: 72px;
     }
