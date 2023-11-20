@@ -63,7 +63,7 @@
 }
 
 .advantages__item--benefit {
-  background-image: url("../img/icons/sprite.svg#benefit-icon");
+  background-image: url("../img/sprite.svg#benefit-icon");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: $base-color;
@@ -73,7 +73,7 @@
   position: absolute;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/icons/sprite.svg#benefit-icon-tablet");
+    mask-image: url("../img/sprite.svg#benefit-icon-tablet");
     width: 80px;
     height: 80px;
 
@@ -92,7 +92,7 @@
 }
 
 .advantages__item--product-type {
-  background-image: url("../img/icons/sprite.svg#product-type-icon");
+  background-image: url("../img/sprite.svg#product-type-icon");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: $base-color;
@@ -102,7 +102,7 @@
   position: absolute;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/icons/sprite.svg#product-type-icon-tablet");
+    background-image: url("../img/sprite.svg#product-type-icon-tablet");
     width: 80px;
     height: 80px;
 
@@ -121,7 +121,7 @@
 }
 
 .advantages__item--reblace {
-  background-image: url("../img/icons/sprite.svg#reblace-icon");
+  background-image: url("../img/sprite.svg#reblace-icon");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: $base-color;
@@ -131,7 +131,7 @@
   position: absolute;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/icons/sprite.svg#reblace-icon-tablet");
+    background-image: url("../img/sprite.svg#reblace-icon-tablet");
     width: 80px;
     height: 80px;
 
@@ -150,7 +150,7 @@
 }
 
 .advantages__item--result {
-  background-image: url("../img/icons/sprite.svg#result-icon");
+  background-image: url("../img/sprite.svg#result-icon");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: $base-color;
@@ -160,7 +160,7 @@
   position: absolute;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/icons/sprite.svg#result-icon-tablet");
+    background-image: url("../img/sprite.svg#result-icon-tablet");
     width: 80px;
     height: 80px;
 

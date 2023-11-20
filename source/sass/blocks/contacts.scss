@@ -4,12 +4,7 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-    padding: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
+    width: 100vw;
     padding: 0;
   }
 }
@@ -29,13 +24,17 @@
 
   @media (min-width: $tablet-width) {
     padding: 61px 70px;
+    margin: 0 auto;
     grid-template-columns: 165px 165px;
     justify-content: space-between;
     background-color: inherit;
+    width: 768px;
+    box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
+    width: auto;
     top: 95px;
     left: 110px;
     gap: 87px;
