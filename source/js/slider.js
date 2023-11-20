@@ -1,19 +1,19 @@
-const slider = document.querySelector(".example__compare");
-const before = slider.querySelector(".example__compare-image-wrapper--before");
-const after = slider.querySelector(".example__compare-image-wrapper--after");
-const beforeImage = before.querySelector("img");
-const afterImage = after.querySelector("img");
-const switcher = slider.querySelector(".example__compare-switch");
+const slider = document.querySelector('.example__compare');
+const before = slider.querySelector('.example__compare-image-wrapper--before');
+const after = slider.querySelector('.example__compare-image-wrapper--after');
+const beforeImage = before.querySelector('img');
+const afterImage = after.querySelector('img');
+const switcher = slider.querySelector('.example__compare-switch');
 const body = document.body;
 
 let isActive = false;
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   let width = slider.offsetWidth;
   beforeImage.style.width - `${width}px`;
 });
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   let width = slider.offsetWidth;
   afterImage.style.width + `${width}px`;
 });
@@ -31,19 +31,19 @@ const pauseEvent = (e) => {
   return false;
 };
 
-switcher.addEventListener("mousedown", () => {
+switcher.addEventListener('mousedown', () => {
   isActive = true;
 });
 
-slider.addEventListener("mouseup", () => {
+slider.addEventListener('mouseup', () => {
   isActive = false;
 });
 
-slider.addEventListener("mouseleave", () => {
+slider.addEventListener('mouseleave', () => {
   isActive = false;
 });
 
-slider.addEventListener("mousemove", (e) => {
+slider.addEventListener('mousemove', (e) => {
   if (!isActive) {
     return;
   }
@@ -55,19 +55,19 @@ slider.addEventListener("mousemove", (e) => {
   pauseEvent(e);
 });
 
-slider.addEventListener("touchstart", () => {
+slider.addEventListener('touchstart', () => {
   isActive = true;
 });
 
-slider.addEventListener("touchend", () => {
+slider.addEventListener('touchend', () => {
   isActive = false;
 });
 
-slider.addEventListener("touchcancel", () => {
+slider.addEventListener('touchcancel', () => {
   isActive = false;
 });
 
-slider.addEventListener("touchmove", (e) => {
+slider.addEventListener('touchmove', (e) => {
   if (!isActive) {
     return;
   }

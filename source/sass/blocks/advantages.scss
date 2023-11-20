@@ -66,21 +66,16 @@
   background-image: url("../img/sprite.svg#benefit-icon");
   background-repeat: no-repeat;
   background-position: 0 0;
-
-  &::after {
-    content: "";
-    background-color: $base-color;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
+  background-color: $base-color;
+  width: 60px;
+  height: 60px;
+  top: 40px;
+  position: absolute;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/sprite.svg#benefit-icon-tablet");
-    background-position: 0 40px;
+    mask-image: url("../img/sprite.svg#benefit-icon-tablet");
+    width: 80px;
+    height: 80px;
 
     &::before {
       content: counter(num);
@@ -90,14 +85,8 @@
       color: $base-grey;
       font-family: $font-base;
       left: 118px;
-      bottom: 50%;
+      bottom: -33px;
       z-index: -1;
-    }
-
-    &::after {
-      width: 80px;
-      height: 80px;
-      top: 40px;
     }
   }
 }
@@ -106,21 +95,16 @@
   background-image: url("../img/sprite.svg#product-type-icon");
   background-repeat: no-repeat;
   background-position: 0 0;
-
-  &::after {
-    content: "";
-    background-color: $base-color;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
+  background-color: $base-color;
+  width: 60px;
+  height: 60px;
+  top: 40px;
+  position: absolute;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/sprite.svg#product-type-icon-tablet");
-    background-position: 0 40px;
+    width: 80px;
+    height: 80px;
 
     &::before {
       content: counter(num);
@@ -130,14 +114,8 @@
       color: $base-grey;
       font-family: $font-base;
       left: 118px;
-      bottom: 50%;
+      bottom: -33px;
       z-index: -1;
-    }
-
-    &::after {
-      width: 80px;
-      height: 80px;
-      top: 40px;
     }
   }
 }
@@ -146,21 +124,16 @@
   background-image: url("../img/sprite.svg#reblace-icon");
   background-repeat: no-repeat;
   background-position: 0 0;
-
-  &::after {
-    content: "";
-    background-color: $base-color;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
+  background-color: $base-color;
+  width: 60px;
+  height: 60px;
+  top: 40px;
+  position: absolute;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/sprite.svg#reblace-icon-tablet");
-    background-position: 0 40px;
+    width: 80px;
+    height: 80px;
 
     &::before {
       content: counter(num);
@@ -170,14 +143,8 @@
       color: $base-grey;
       font-family: $font-base;
       left: 118px;
-      bottom: 50%;
+      bottom: -33px;
       z-index: -1;
-    }
-
-    &::after {
-      width: 80px;
-      height: 80px;
-      top: 40px;
     }
   }
 }
@@ -186,21 +153,16 @@
   background-image: url("../img/sprite.svg#result-icon");
   background-repeat: no-repeat;
   background-position: 0 0;
-
-  &::after {
-    content: "";
-    background-color: $base-color;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
+  background-color: $base-color;
+  width: 60px;
+  height: 60px;
+  top: 40px;
+  position: absolute;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/sprite.svg#result-icon-tablet");
-    background-position: 0 40px;
+    width: 80px;
+    height: 80px;
 
     &::before {
       content: counter(num);
@@ -210,14 +172,8 @@
       color: $base-grey;
       font-family: $font-base;
       left: 118px;
-      bottom: 50%;
+      bottom: -33px;
       z-index: -1;
-    }
-
-    &::after {
-      width: 80px;
-      height: 80px;
-      top: 40px;
     }
   }
 }

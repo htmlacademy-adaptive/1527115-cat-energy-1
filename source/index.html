@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -85,16 +85,20 @@
       <section class="advantages">
         <h2 class="advantages__title">Как это работает</h2>
         <ol class="advantages__list">
-          <li class="advantages__item advantages__item--benefit">
+          <li class="advantages__item">
+            <div class="advantages__item--benefit"></div>
             <p class="advantages__text">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
-          <li class="advantages__item advantages__item--product-type">
+          <li class="advantages__item">
+            <div class="advantages__item--product-type"></div>
             <p class="advantages__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
-          <li class="advantages__item advantages__item--reblace">
+          <li class="advantages__item">
+            <div class="advantages__item--reblace"></div>
             <p class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
-          <li class="advantages__item advantages__item--result">
+          <li class="advantages__item">
+            <div class="advantages__item--result"></div>
             <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца.</p>
           </li>
         </ol>
@@ -149,52 +153,54 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__logo">
-        <a class="main-footer__logo-link" href="index.html">
-          <svg class="main-footer__logo-text logo-text" width="128" height="24">
-            <use href="img/sprite.svg#logo-text"></use>
+      <div class="main-footer__wrapper">
+        <div class="main-footer__logo">
+          <a class="main-footer__logo-link" href="index.html">
+            <svg class="main-footer__logo-text logo-text" width="128" height="24" viewBox="0 0 128 24">
+              <use href="img/sprite.svg#logo-text"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#">
+                <svg widt="28" height="22" viewBox="0 0 28 22">
+                  <use href="img/sprite.svg#vkontakte"></use>
+                </svg>
+                <span class="visually-hidden">
+                  Мы в Вконтакте
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">
+                <svg widt="28" height="22" viewBox="0 0 28 22">
+                  <use href="img/sprite.svg#youtube"></use>
+                </svg>
+                <span class="visually-hidden">
+                  Мы в Ютубе
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="#">
+                <svg widt="28" height="22" viewBox="0 0 28 22">
+                  <use href="img/sprite.svg#telegram"></use>
+                </svg>
+                <span class="visually-hidden">
+                  Мы в Телеграме
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <a class="copyright__link" href="">HTML Academy</a>
+          <svg class="copyright__logo" widt="27" height="34" viewBox="0 0 27 34">
+            <use href="img/sprite.svg#htmlacademy"></use>
           </svg>
-        </a>
-      </div>
-      <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">
-              <svg widt="28" height="22" viewBox="0 0 28 22">
-                <use href="img/sprite.svg#vk"></use>
-              </svg>
-              <span class="visually-hidden">
-                Мы в Вконтакте
-              </span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
-              <svg widt="28" height="22" viewBox="0 0 28 22">
-                <use href="img/sprite.svg#youtube"></use>
-              </svg>
-              <span class="visually-hidden">
-                Мы в Ютубе
-              </span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="#">
-              <svg widt="28" height="22" viewBox="0 0 28 22">
-                <use href="img/sprite.svg#telegram"></use>
-              </svg>
-              <span class="visually-hidden">
-                Мы в Телеграме
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="">HTML Academy</a>
-        <svg class="copyright__logo" widt="27" height="34" viewBox="0 0 27 34">
-          <use href="img/sprite.svg#copyright__logo"></use>
-        </svg>
+        </div>
       </div>
     </footer>
     <script src="js/script.js"></script>
