@@ -1,0 +1,39 @@
+.checkbox {
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox__input {
+  margin: 0;
+  margin-right: 15px;
+}
+
+.checkbox__input[type="checkbox"] + .form__control-mark {
+  border: 1px solid #cdcdcd;
+}
+
+.checkbox__input[type="checkbox"]:checked + .form__control-mark {
+  background-image: url("../img/sprite.svg#tick");
+  background-position: 7px 7px;
+}
+
+.checkbox__input[type="checkbox"] + .form__control-mark:hover {
+  border-color: #bababa;
+}
+
+.checkbox__input[type="checkbox"]:checked + .form__control-mark:hover {
+  border-color: #bababa;
+}
+
+.checkbox__input[type="checkbox"]:disabled + .form__control-mark {
+  opacity: 0.3;
+}
+
+.checkbox__input[type="checkbox"]:focus-visible + .form__control-mark {
+  outline: 2px solid #444444;
+}
+
+.checkbox__name {
+  display: inline-block;
+  padding-left: 60px;
+}

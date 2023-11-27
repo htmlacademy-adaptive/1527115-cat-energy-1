@@ -20,10 +20,10 @@
         </picture>
       </a>
       <!-- Для изменения состояния кнопки, добавляется класс "main-header__toggle--opened" или "main-header__toggle--closed" -->
-      <button class="main-header__toggle main-header__toggle--closed" type="button">
+      <button class="main-header__toggle main-header__toggle--opened" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav__nojs">
         <ul class="main-nav__list main-nav__list--light">
           <li class="main-nav__item main-nav__item--active main-nav__item--light">
             <a href="index.html">
@@ -112,11 +112,11 @@
           <dl class="example__list">
             <div class="example__item index">
               <dt class="index__meaning">5 кг</dt>
-              <dd class="index__description">снижение <br> веса</dd>
+              <dd class="index__description">снижение <br> &nbsp; веса</dd>
             </div>
             <div class="example__item index">
               <dt class="index__meaning">60 дней</dt>
-              <dd class="index__description">затрачено <br> времени</dd>
+              <dd class="index__description">затрачено <br> &nbsp; времени</dd>
             </div>
           </dl>
           <div class="example__expenses">
@@ -196,10 +196,12 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="">HTML Academy</a>
-          <svg class="copyright__logo" widt="27" height="34" viewBox="0 0 27 34">
-            <use href="img/sprite.svg#htmlacademy"></use>
-          </svg>
+          <a class="copyright__link" href="">
+            <span>HTML Academy</span>
+            <svg class="copyright__logo" widt="27" height="34" viewBox="0 0 27 34">
+              <use href="img/sprite.svg#htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

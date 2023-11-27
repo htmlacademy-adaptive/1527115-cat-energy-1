@@ -2,10 +2,16 @@
   @include wrapper;
   position: relative;
   background-color: #ffffff;
+  width: 100vw;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    width: 100vw;
     padding: 0;
+    width: 100vw;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
   }
 }
 
@@ -18,7 +24,9 @@
 }
 
 .contacts__wrapper {
+  width: 280px;
   padding: 26px 0;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
@@ -34,9 +42,9 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    width: auto;
-    top: 95px;
-    left: 110px;
+    width: 565px;
+    bottom: 95px;
+    left: 0;
     gap: 87px;
     z-index: 2;
     box-shadow: 0 0 40px 0 rgba(45, 52, 64, 0.4);
