@@ -1,4 +1,6 @@
-.copyright {
+.copyright__link {
+  @include link-default;
+  text-transform: none;
   display: flex;
   justify-content: space-between;
 
@@ -8,12 +10,11 @@
   }
 }
 
-.copyright__link {
-  @include link-default;
-  text-transform: none;
-}
-
 .copyright__logo {
   display: block;
   color: #666666;
+}
+
+.copyright__link:hover .copyright__logo {
+  color: $base-color;
 }

@@ -264,6 +264,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/sprite.svg#cat-pro-back-tablet");
+    background-repeat: repeat;
     background-position: 411px 92px;
   }
 
@@ -300,19 +301,28 @@
   line-height: 16px;
   color: #000000;
   margin-top: 15px;
-  display: inline;
+  display: inline-block;
   position: relative;
 
   &::after {
     content: "";
-    outline: 1px solid;
     mask-image: url("../img/sprite.svg#arrow-right");
     background-color: #000000;
     width: 32px;
     height: 12px;
     right: -47px;
-    top: 6px;
+    top: 2px;
     position: absolute;
+  }
+
+  &:hover {
+    &::after {
+      mask-image: url("../img/sprite.svg#arrow-long");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {

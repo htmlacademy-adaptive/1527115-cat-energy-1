@@ -53,11 +53,11 @@
             <fieldset class="form__fieldset form__fieldset--text">
               <div class="form__group">
                 <label class="form__label" for="selection-name">Имя:*</label>
-                <input class="form__input input" type="text" name="selection-name" id="selection-name" placeholder="Барсик">
+                <input class="form__input input" type="text" name="selection-name" id="selection-name" placeholder="Барсик" required>
               </div>
               <div class="form__group">
                 <label class="form__label" for="selection-weight">Вес (кг):*</label>
-                <input class="form__input input" type="number" name="selection-weight" id="selection-weight" placeholder="7">
+                <input class="form__input input" type="number" name="selection-weight" id="selection-weight" placeholder="7" required>
               </div>
               <div class="form__group">
                 <label class="form__label" for="selection-age">Возраст (лет):</label>
@@ -68,19 +68,22 @@
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__legend radio">
-                    <input class="radio__input" type="radio" name="program" value="thin" checked>
+                    <input class="radio__input visually-hidden" type="radio" name="program" value="thin" checked>
+                    <span class="form__control-mark"></span>
                     <span class="radio__name">Похудение</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__legend radio">
-                    <input class="radio__input" type="radio" name="program" value="weight">
+                    <input class="radio__input visually-hidden" type="radio" name="program" value="weight">
+                    <span class="form__control-mark"></span>
                     <span class="radio__name">Набор массы</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__legend radio">
-                    <input class="radio__input" type="radio" name="program" value="advice">
+                    <input class="radio__input visually-hidden" type="radio" name="program" value="advice">
+                    <span class="form__control-mark"></span>
                     <span class="radio__name">Не знаю (нужен ваш совет)</span>
                   </label>
                 </li>
@@ -92,13 +95,13 @@
               <div class="form__wrapper">
                 <h2 class="form__title">Контактные данные <br>(владельца кота)</h2>
               </div>
-              <div class="form__group">
+              <div class="form__group form__group--email">
                 <label class="form__label" for="enter-email">E-mail:*</label>
-                <input class="form__input input" type="email" name="enter-email" id="enter-email" placeholder="kuklachev@gmail.com">
+                <input class="form__input input" type="email" name="enter-email" id="enter-email" placeholder="kuklachev@gmail.com" required>
               </div>
-              <div class="form__group">
+              <div class="form__group form__group--phone">
                 <label class="form__label" for="enter-phone">Телефон:*</label>
-                <input class="form__input input" type="phone" name="enter-phone" id="enter-phone" placeholder="8 (960) 900-60-90">
+                <input class="form__input input" type="phone" name="enter-phone" id="enter-phone" placeholder="8 (960) 900-60-90" required>
               </div>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--group">
@@ -114,25 +117,29 @@
               <ul class="form__list form__list-checkbox">
                 <li class="form__item">
                   <label class="form__legend checkbox">
-                    <input class="checkbox__input" type="checkbox" name="program" value="sweetener" checked>
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="program" value="sweetener" checked>
+                    <span class="form__control-mark"></span>
                     <span class="checkbox__name">Сахарозаменитель</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__legend checkbox">
-                    <input class="checkbox__input" type="checkbox" name="program" value="water">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="program" value="water">
+                    <span class="form__control-mark"></span>
                     <span class="checkbox__name">Питьевая вода</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__legend checkbox">
-                    <input class="checkbox__input" type="checkbox" name="program" value="milk">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="program" value="milk">
+                    <span class="form__control-mark"></span>
                     <span class="checkbox__name">Молоко</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__legend checkbox">
-                    <input class="checkbox__input" type="checkbox" name="program" value="vitamin">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="program" value="vitamin">
+                    <span class="form__control-mark"></span>
                     <span class="checkbox__name">Витамины</span>
                   </label>
                 </li>
@@ -161,7 +168,7 @@
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
           <a class="main-footer__logo-link" href="index.html">
-            <svg class="main-footer__logo-text logo-text" width="128" height="24" viewBox="128 24">
+            <svg class="main-footer__logo-text logo-text" width="128" height="24" viewBox="0 0 128 24">
               <use href="img/sprite.svg#logo-text"></use>
             </svg>
           </a>
@@ -201,10 +208,12 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="">HTML Academy</a>
-          <svg class="copyright__logo" widt="27" height="34" viewBox="0 0 27 34">
-            <use href="img/sprite.svg#htmlacademy"></use>
-          </svg>
+          <a class="copyright__link" href="">
+            <span>HTML Academy</span>
+            <svg class="copyright__logo" widt="27" height="34" viewBox="0 0 27 34">
+              <use href="img/sprite.svg#htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

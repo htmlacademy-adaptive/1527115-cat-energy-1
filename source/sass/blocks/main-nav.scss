@@ -28,6 +28,12 @@
   }
 }
 
+.main-nav__nojs {
+  position: static;
+  display: block;
+  transform: translateY(-1px);
+}
+
 .main-nav__list {
   @include list-default;
   text-align: center;

@@ -1,0 +1,28 @@
+.input {
+  font-family: $font-base;
+  font-size: 16px;
+  text-transform: uppercase;
+  justify-self: stretch;
+  padding: 14px 15px 13px;
+  border: 1px solid #e7e7e7;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus-visible {
+    border: 2px solid #444444;
+    padding: 13px 14px 12px;
+    outline: none;
+  }
+
+  &--error {
+    border: 2px solid #ff8282;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    display: none;
+    margin: 0;
+  }
+}
