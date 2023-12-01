@@ -31,7 +31,7 @@
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 70px;
+    padding: 61px 70px 61px 69px;
     margin: 0 auto;
     grid-template-columns: 165px 165px;
     justify-content: space-between;
@@ -43,7 +43,8 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     width: 565px;
-    bottom: 95px;
+    padding: 61px 70px 61px 79px;
+    bottom: 105px;
     left: 0;
     gap: 87px;
     z-index: 2;
@@ -67,15 +68,21 @@
   font-family: $additional-font;
   font-size: 14px;
   line-height: 20px;
-  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+    margin: 0;
+    display: grid;
+    gap: 18px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
   }
+}
+
+.contacts__text p {
+  margin: 0;
 }

@@ -1,14 +1,17 @@
 .mini-card {
-  padding: 13px 0 19px;
+  padding: 12px 0 19px;
   display: grid;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45px 40px;
+    padding: 25px 37px 28px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 325px 1fr 244px;
-    padding: 15px 0 16px;
+    grid-template-rows: none;
+    padding: 15px 0;
     align-items: center;
   }
 }
@@ -43,11 +46,13 @@
     font-size: 16px;
     line-height: 20px;
     align-self: end;
+    margin-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
     justify-self: start;
     margin: 0;
+    margin-top: 9px;
     align-self: center;
   }
 }

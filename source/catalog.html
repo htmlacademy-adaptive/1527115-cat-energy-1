@@ -19,29 +19,27 @@
           <img class="main-header__logo-image" src="img/logo.svg" width="190" height="38" alt="Магазин «Кэт энерджи»">
         </picture>
       </a>
-      <button class="main-header__toggle main-header__toggle--closed" type="button">
+      <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="main-nav">
-        <!-- <div class="main-nav__wrapper"> -->
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link" href="catalog.html">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">
-                Подобрать программу
-              </a>
-            </li>
-          </ul>
-        <!-- </div> -->
+      <nav class="main-nav main-nav__noscript">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main-container">
@@ -239,9 +237,6 @@
           </li>
           <li class="catalog__item show-more">
             <div class="show-more__wrapper">
-              <!-- <svg width="30" height="30" viewBox="0 0 30 30">
-                <use href="img/sprite.svg#plus"></use>
-              </svg> -->
               <div class="svg"></div>
               <h2 class="show-more__title">Показать еще<br>&nbsp;100500 товаров</h2>
               <p class="show-more__text">На самом деле вкусов<br>&nbsp;гораздо больше!</p>
@@ -251,14 +246,16 @@
         </ul>
       </section>
       <section class="additional-product">
-        <h2 class="additional-product__title">Дополнительные товары</h2>
+        <div class="additional-product__title-wrapper">
+          <h2 class="additional-product__title">Дополнительные товары</h2>
+        </div>
         <div class="additional-product__wrapper">
           <ul class="additional-product__list">
             <li class="additional-product__item mini-card">
               <h3 class="mini-card__title">Сахарозаменитель</h3>
               <dl class="mini-card__list">
                 <div class="mini-card__item">
-                  <dd class="mini-card__description">1 упаковка (100г)</dd>
+                  <dd class="mini-card__description">1 упаковка (100 г)</dd>
                   <dt class="mini-card__meaning">200 ₽</dt>
                 </div>
               </dl>
@@ -288,7 +285,7 @@
               <h3 class="mini-card__title">Витамины</h3>
               <dl class="mini-card__list">
                 <div class="mini-card__item">
-                  <dd class="mini-card__description">1 упаковка (30г)</dd>
+                  <dd class="mini-card__description">1 упаковка (30 г)</dd>
                   <dt class="mini-card__meaning">300 ₽</dt>
                 </div>
               </dl>
@@ -300,17 +297,20 @@
             <svg width="78" height="80" viewBox="0 0 78 80">
               <use href="img/sprite.svg#banner-icon"></use>
             </svg>
-            <p class="banner__text">Закажите все и получите чехол для кота в подарок!</p>
+            <p class="banner__text">Закажите все <br>и получите чехол для кота в подарок!</p>
           </div>
         </div>
       </section>
       <section class="contacts contacts--accent">
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">Контакты</h2>
-          <b class="contacts__message">Приглашаем к сотрудничеству дилеров!</b>
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <b class="contacts__message">Приглашаем <br>к сотрудничеству дилеров!</b>
+          <div class="contacts__text">
+            <p>ул. Большая Конюшенная, д. 19/8</p>
+            <p>Санкт-Петербург</p>
+          </div>
         </div>
-        <div class="contacts__map-wrapper map">
+        <div class="contacts__map-wrapper map map__noscript">
           <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6060550146617!2d30.322028159305766!3d59.93867885442228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1698498294061!5m2!1sru!2sru"
           width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>

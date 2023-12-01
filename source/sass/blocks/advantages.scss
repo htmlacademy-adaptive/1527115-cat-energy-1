@@ -29,14 +29,14 @@
   @include list-default;
   counter-reset: num;
   margin: 0;
-  margin-top: 40px;
+  margin-top: 42px;
   display: grid;
   gap: 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     row-gap: 37px;
-    column-gap: 177px;
+    column-gap: 60px;
     margin-top: 32px;
     margin-bottom: 47px;
   }
@@ -58,6 +58,7 @@
 
   @media (min-width: $tablet-width) {
     @include text-tablet;
+    width: 245px;
     min-height: 280px;
   }
 }
@@ -70,12 +71,14 @@
   width: 60px;
   height: 60px;
   position: absolute;
+  transform: translateY(-2px);
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/sprite.svg#benefit-icon-tablet");
     width: 80px;
     height: 80px;
-    top: 40px;
+    top: 42px;
 
     &::before {
       content: counter(num);
@@ -85,7 +88,7 @@
       color: $base-grey;
       font-family: $font-base;
       left: 118px;
-      bottom: -33px;
+      bottom: -34px;
       z-index: -1;
     }
   }
@@ -99,12 +102,14 @@
   width: 60px;
   height: 60px;
   position: absolute;
+  transform: translateY(-2px);
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/sprite.svg#product-type-icon-tablet");
     width: 80px;
     height: 80px;
-    top: 40px;
+    top: 42px;
 
     &::before {
       content: counter(num);
@@ -113,7 +118,7 @@
       font-size: 280px;
       color: $base-grey;
       font-family: $font-base;
-      left: 118px;
+      left: 111px;
       bottom: -33px;
       z-index: -1;
     }
@@ -128,12 +133,14 @@
   width: 60px;
   height: 60px;
   position: absolute;
+  transform: translateY(-2px);
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/sprite.svg#reblace-icon-tablet");
     width: 80px;
     height: 80px;
-    top: 40px;
+    top: 42px;
 
     &::before {
       content: counter(num);
@@ -142,7 +149,7 @@
       font-size: 280px;
       color: $base-grey;
       font-family: $font-base;
-      left: 118px;
+      left: 114px;
       bottom: -33px;
       z-index: -1;
     }
@@ -157,12 +164,14 @@
   width: 60px;
   height: 60px;
   position: absolute;
+  transform: translateY(-2px);
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/sprite.svg#result-icon-tablet");
     width: 80px;
     height: 80px;
-    top: 40px;
+    top: 42px;
 
     &::before {
       content: counter(num);
@@ -171,7 +180,7 @@
       font-size: 280px;
       color: $base-grey;
       font-family: $font-base;
-      left: 118px;
+      left: 114px;
       bottom: -33px;
       z-index: -1;
     }
@@ -182,8 +191,16 @@
   margin: 0;
   padding-left: 80px;
 
+  & br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 0;
     padding-top: 151px;
+
+    & br {
+      display: block;
+    }
   }
 }

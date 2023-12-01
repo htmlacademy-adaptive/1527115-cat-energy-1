@@ -1,18 +1,33 @@
+.copyright {
+
+  @media (min-width: $tablet-width) {
+    transform: translateY(-7px);
+  }
+}
+
 .copyright__link {
   @include link-default;
+  font-family: $additional-font;
   text-transform: none;
+  padding-top: 7px;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     align-items: center;
     gap: 23px;
+    padding-top: 0;
   }
 }
 
 .copyright__logo {
   display: block;
   color: #666666;
+  transform: translateY(-7px);
+
+  @media (min-width: $tablet-width) {
+    transform: translateY(0);
+  }
 }
 
 .copyright__link:hover .copyright__logo {

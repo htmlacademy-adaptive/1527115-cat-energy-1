@@ -1,6 +1,6 @@
 .main-container__form {
   @include wrapper;
-  padding-top: 27px;
+  padding-top: 28px;
 
   @media (min-width: $tablet-width) {
     padding: 65px 40px 60px;
@@ -24,7 +24,7 @@
 
   @media (min-width: $tablet-width) {
     @include title-tablet;
-    padding-bottom: 84px;
+    padding-bottom: 65px;
   }
 }
 

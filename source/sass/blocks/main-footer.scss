@@ -8,8 +8,9 @@
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 35px;
   position: relative;
+  flex-wrap: wrap;
 
   &::before {
     content: "";
@@ -32,7 +33,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
+    padding-top: 62px;
     padding-bottom: 55px;
     flex-direction: row;
     justify-content: space-between;
@@ -47,8 +48,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 66px;
-    padding-bottom: 66px;
+    padding-top: 73px;
+    padding-bottom: 61px;
   }
 }
 
