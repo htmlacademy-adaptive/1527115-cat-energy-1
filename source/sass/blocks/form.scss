@@ -129,6 +129,7 @@
     display: grid;
     gap: 65px;
   }
+
   @media (min-width: $desktop-width) {
     gap: 60px;
   }
@@ -326,7 +327,6 @@
   }
 
   @media (min-width: $tablet-width) {
-
     &::before {
       right: 14px;
       top: 16px;
@@ -351,7 +351,6 @@
   }
 
   @media (min-width: $tablet-width) {
-
     &::before {
       right: 14px;
       top: 16px;

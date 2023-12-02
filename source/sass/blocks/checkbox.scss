@@ -14,7 +14,11 @@
 
 .checkbox__input[type="checkbox"]:checked + .form__control-mark {
   background-image: url("../img/sprite.svg#tick");
-  background-position: 7px 7px;
+  background-position: 1px 2px;
+
+  @media (min-width: $tablet-width) {
+  background-position: 6px 6px;
+  }
 }
 
 .checkbox__input[type="checkbox"] + .form__control-mark:hover {
