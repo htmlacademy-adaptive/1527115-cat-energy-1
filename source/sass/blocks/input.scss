@@ -13,7 +13,7 @@
 
   &:focus-visible {
     border: 2px solid #444444;
-    padding: 13px 14px 12px;
+    padding: 11px 14px 12px;
     outline: none;
   }
 
@@ -30,5 +30,11 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     padding: 10px 19px;
+
+    &:focus-visible {
+      border: 2px solid #444444;
+      padding: 9px 18px;
+      outline: none;
+    }
   }
 }

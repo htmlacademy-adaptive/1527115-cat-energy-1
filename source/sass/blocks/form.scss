@@ -145,7 +145,7 @@
   padding-right: 50px;
 
   &:focus-visible {
-    padding: 13px 49px 12px 14px;
+    padding: 9px 49px 9px 18px;
   }
 }
 
@@ -242,7 +242,7 @@
 
   &:focus-visible {
     border: 2px solid #444444;
-    padding: 13px 14px 12px;
+    padding: 10px 13px 12px 14px;
     outline: none;
   }
 
@@ -255,6 +255,12 @@
     min-height: 175px;
     margin-top: 31px;
     padding: 10px 14px 13px 19px;
+
+    &:focus-visible {
+      border: 2px solid #444444;
+      padding: 9px 13px 12px 18px;
+      outline: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -262,6 +268,12 @@
     margin-top: 22px;
     margin-bottom: 10px;
     padding: 8px 14px 13px 20px;
+
+    &:focus-visible {
+      border: 2px solid #444444;
+      padding: 7px 13px 12px 19px;
+      outline: none;
+    }
   }
 }
 
