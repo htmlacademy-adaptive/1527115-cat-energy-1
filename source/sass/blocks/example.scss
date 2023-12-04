@@ -1,7 +1,7 @@
 .example {
   @include wrapper;
   background-color: $base-grey;
-  padding-top: 25px;
+  padding-top: 23px;
   padding-bottom: 40px;
   position: relative;
 
@@ -23,6 +23,7 @@
     display: grid;
     grid-auto-flow: column;
     grid-template-rows: auto 1fr;
+    grid-template-columns: 660px 1fr;
 
     &::after {
       content: "";
@@ -52,17 +53,19 @@
 
 .example__wrapper {
   display: grid;
-  gap: 20px;
+  gap: 21px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    gap: 55px;
-    margin-bottom: 99px;
+    gap: 40px;
+    margin-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 436px;
+    gap: 17px;
+    margin-bottom: 57px;
   }
 }
 
@@ -87,6 +90,7 @@
     br {
       display: inline;
     }
+    margin-bottom: 27px;
   }
 }
 
@@ -119,12 +123,14 @@
     align-self: center;
     flex-direction: column;
     gap: 9px;
+    padding-bottom: 5px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: start;
-    gap: 63px;
+    gap: 62px;
+    letter-spacing: 0.2px;
   }
 }
 
@@ -147,9 +153,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 101px;
+    margin-bottom: 85px;
     padding: 0;
     grid-row: 1/-1;
+    margin-top: 1px;
 
     &::after {
       content: none;

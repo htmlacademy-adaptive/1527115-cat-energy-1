@@ -27,10 +27,32 @@
   }
 }
 
+.form__group-wrapper {
+  display: grid;
+  gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
 .form__group {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 13px;
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: none;
+    gap: 15px;
+  }
 }
 
 .form__label {
@@ -38,7 +60,7 @@
   white-space: nowrap;
 }
 
-.form__fieldset__wrapper {
+.form__fieldset-wrapper {
   @media (min-width: $tablet-width) {
     display: grid;
     gap: 72px;
@@ -49,22 +71,26 @@
     grid-template-columns: 1fr 1fr;
     gap: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 70px;
+  }
 }
 
 .form__fieldset--radio-group {
   @media (min-width: $tablet-width) {
     border: 1px solid #e7e7e7;
-    padding: 23px 27px 27px;
+    padding: 27px 27px 31px;
   }
 }
 
 .form__list {
   @include list-default;
   margin: 0;
-  padding-top: 22px;
+  padding-top: 28px;
   padding-bottom: 19px;
   display: grid;
-  gap: 26px;
+  gap: 25px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -78,36 +104,54 @@
 }
 
 .form__list-checkbox {
+  padding: 3px 0 23px;
+
   @media (min-width: $tablet-width) {
-    gap: 40px;
+    column-gap: 61px;
+    row-gap: 42px;
     grid-template-columns: repeat(2, 1fr);
+    padding-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column: 1/-1;
-    gap: 0;
+    gap: 80px;
   }
 }
 
 .form__fieldset-group-wrapper {
+  padding-top: 8px;
+
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     display: grid;
     gap: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 60px;
   }
 }
 
 .form__fieldset--group {
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr;
     column-gap: 80px;
   }
 }
 
+.form__fieldset--group .form__input {
+  padding-right: 50px;
+
+  &:focus-visible {
+    padding: 9px 49px 9px 18px;
+  }
+}
+
 .form__wrapper {
-  margin-top: 26px;
-  margin-bottom: 35px;
+  margin-top: 25px;
+  margin-bottom: 21px;
   display: flex;
   grid-column: 1/-1;
   position: relative;
@@ -125,6 +169,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+
     br {
       display: none;
     }
@@ -163,7 +209,7 @@
     line-height: 36px;
     padding-right: 0;
     padding-top: 0;
-    padding-bottom: 62px;
+    padding-bottom: 36px;
 
     &::after {
       width: calc(100% + 80px);
@@ -182,12 +228,13 @@
   font-size: 16px;
   text-transform: uppercase;
   justify-self: stretch;
-  padding: 14px 14px 13px 15px;
+  padding: 11px 14px 13px 15px;
   border: 1px solid #e7e7e7;
   width: auto;
   min-height: 150px;
   box-sizing: border-box;
   resize: none;
+  margin-top: 2px;
 
   &:hover {
     border: 1px solid #cdcdcd;
@@ -195,7 +242,7 @@
 
   &:focus-visible {
     border: 2px solid #444444;
-    padding: 13px 14px 12px;
+    padding: 10px 13px 12px 14px;
     outline: none;
   }
 
@@ -204,11 +251,29 @@
   }
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
     min-height: 175px;
+    margin-top: 31px;
+    padding: 10px 14px 13px 19px;
+
+    &:focus-visible {
+      border: 2px solid #444444;
+      padding: 9px 13px 12px 18px;
+      outline: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    padding: 8px 14px 13px 20px;
+
+    &:focus-visible {
+      border: 2px solid #444444;
+      padding: 7px 13px 12px 19px;
+      outline: none;
+    }
   }
 }
 
@@ -217,20 +282,26 @@
   padding-top: 15px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 52px;
+    padding-top: 35px;
     grid-template-columns: 1fr 1fr;
     grid-column: 1/-1;
     gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 80px;
+    padding-top: 43px;
+    gap: 82px;
   }
 }
 
 .form__button {
   @include button;
   font-family: $font-base;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding: 17px;
+  }
 }
 
 .form__note {
@@ -239,11 +310,14 @@
   line-height: 16px;
   text-align: center;
   text-transform: none;
-  margin-top: 21px;
+  margin-top: 22px;
   margin-bottom: 32px;
+  margin-left: 1px;
 
   @media (min-width: $tablet-width) {
+    font-size: 16px;
     margin: 0;
+    padding-left: 2px;
     align-self: center;
     text-align: left;
   }
@@ -257,11 +331,18 @@
     background-image: url("../img/sprite.svg#phone");
     width: 20px;
     height: 20px;
-    right: 16px;
-    top: 16px;
+    right: 12px;
+    top: 13px;
     position: absolute;
     display: block;
     z-index: 3;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      right: 14px;
+      top: 16px;
+    }
   }
 }
 
@@ -274,19 +355,31 @@
     background-size: 20px 20px;
     width: 20px;
     height: 20px;
-    right: 16px;
-    top: 16px;
+    right: 12px;
+    top: 13px;
     position: absolute;
     display: block;
     z-index: 3;
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      right: 14px;
+      top: 16px;
+    }
+  }
 }
 
 .form__control-mark {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   box-sizing: border-box;
   position: absolute;
   bottom: -6px;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }

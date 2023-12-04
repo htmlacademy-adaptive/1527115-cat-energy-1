@@ -2,8 +2,9 @@
   font-family: $font-base;
   font-size: 16px;
   text-transform: uppercase;
+  line-height: 18px;
   justify-self: stretch;
-  padding: 14px 15px 13px;
+  padding: 12px 15px 13px 15px;
   border: 1px solid #e7e7e7;
 
   &:hover {
@@ -12,7 +13,7 @@
 
   &:focus-visible {
     border: 2px solid #444444;
-    padding: 13px 14px 12px;
+    padding: 11px 14px 12px;
     outline: none;
   }
 
@@ -24,5 +25,16 @@
   &::-webkit-inner-spin-button {
     display: none;
     margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding: 10px 19px;
+
+    &:focus-visible {
+      border: 2px solid #444444;
+      padding: 9px 18px;
+      outline: none;
+    }
   }
 }

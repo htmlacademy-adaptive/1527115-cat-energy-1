@@ -1,9 +1,15 @@
 .social__list {
   @include list-default;
   margin: 0;
-  display: flex;
+  display: grid;
   gap: 24px;
+  grid-template-columns: repeat(3, 28px);
+  justify-items: center;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 36px;
+  }
 }
 
 .social__link {

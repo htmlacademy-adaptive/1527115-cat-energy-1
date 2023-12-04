@@ -19,29 +19,27 @@
           <img class="main-header__logo-image" src="img/logo.svg" width="190" height="38" alt="Магазин «Кэт энерджи»">
         </picture>
       </a>
-      <button class="main-header__toggle main-header__toggle--closed" type="button">
+      <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="main-nav">
-        <!-- <div class="main-nav__wrapper"> -->
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="catalog.html">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a href="form.html">
-                Подобрать программу
-              </a>
-            </li>
-          </ul>
-        <!-- </div> -->
+      <nav class="main-nav main-nav__noscript">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main-container">
@@ -49,7 +47,7 @@
         <h1 class="main-container__form-title">Подбор программы</h1>
         <form class="selection-form form" action="https://echo.htmlacademy.ru/" method="post">
           <b class="selection-form__title">Заполните анкету, и мы подберем <br>программу питания для вашего кота</b>
-          <div class="form__fieldset__wrapper">
+          <div class="form__fieldset-wrapper">
             <fieldset class="form__fieldset form__fieldset--text">
               <div class="form__group">
                 <label class="form__label" for="selection-name">Имя:*</label>
@@ -93,15 +91,17 @@
           <div class="form__fieldset-group-wrapper">
             <fieldset class="form__fieldset form__fieldset--group">
               <div class="form__wrapper">
-                <h2 class="form__title">Контактные данные <br>(владельца кота)</h2>
+                <h2 class="form__title">Контактные данные&nbsp;<br>(владельца кота)</h2>
               </div>
-              <div class="form__group form__group--email">
-                <label class="form__label" for="enter-email">E-mail:*</label>
-                <input class="form__input input" type="email" name="enter-email" id="enter-email" placeholder="kuklachev@gmail.com" required>
-              </div>
-              <div class="form__group form__group--phone">
-                <label class="form__label" for="enter-phone">Телефон:*</label>
-                <input class="form__input input" type="phone" name="enter-phone" id="enter-phone" placeholder="8 (960) 900-60-90" required>
+              <div class="form__group-wrapper">
+                <div class="form__group form__group--email">
+                  <label class="form__label" for="enter-email">E-mail:*</label>
+                  <input class="form__input input" type="email" name="enter-email" id="enter-email" placeholder="kuklachev@gmail.com" required>
+                </div>
+                <div class="form__group form__group--phone">
+                  <label class="form__label" for="enter-phone">Телефон:*</label>
+                  <input class="form__input input" type="phone" name="enter-phone" id="enter-phone" placeholder="8 (960) 900-60-90" required>
+                </div>
               </div>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--group">
@@ -148,17 +148,20 @@
           </div>
           <div class="form__button-wrapper">
             <button class="form__button" type="submit">Отправить заявку</button>
-            <p class="form__note">* - Обязательные поля</p>
+            <p class="form__note">* – Обязательные поля</p>
           </div>
         </form>
       </section>
       <section class="contacts contacts--accent">
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">Контакты</h2>
-          <b class="contacts__message">Приглашаем к сотрудничеству дилеров!</b>
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <b class="contacts__message">Приглашаем <br>к сотрудничеству дилеров!</b>
+          <div class="contacts__text">
+            <p>ул. Большая Конюшенная, д. 19/8</p>
+            <p>Санкт-Петербург</p>
+          </div>
         </div>
-        <div class="contacts__map-wrapper map">
+        <div class="contacts__map-wrapper map map__noscript">
           <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6060550146617!2d30.322028159305766!3d59.93867885442228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1698498294061!5m2!1sru!2sru"
           width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -208,7 +211,7 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span>HTML Academy</span>
             <svg class="copyright__logo" widt="27" height="34" viewBox="0 0 27 34">
               <use href="img/sprite.svg#htmlacademy"></use>

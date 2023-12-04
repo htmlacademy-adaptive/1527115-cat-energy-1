@@ -55,6 +55,7 @@
     background-color: #ffffff;
     background-image: none;
     width: 709px;
+    margin-bottom: 0;
     padding-top: 65px;
     display: grid;
   }
@@ -86,6 +87,10 @@
     width: 420px;
     padding-left: 90px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .selection-product__slogan {
@@ -108,18 +113,22 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 52px;
+    padding-left: 80px;
   }
 }
 
 .selection-product__image-wrapper {
+  padding-bottom: 3px;
+
   @media (min-width: $tablet-width) {
     align-self: end;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     right: 241px;
-    bottom: 145px;
+    bottom: 133px;
   }
 }
 
@@ -133,6 +142,7 @@
   @media (min-width: $tablet-width) {
     @include button-tablet;
     position: absolute;
+    padding: 14px 26px;
     left: 110px;
     top: 295px;
     width: 192px;
@@ -140,7 +150,7 @@
 
   @media (min-width: $desktop-width) {
     position: static;
-    margin-left: 90px;
+    margin-left: 80px;
     align-self: start;
   }
 }
@@ -162,8 +172,9 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    margin-top: 82px;
+    margin-top: 1px;
     margin-bottom: 71px;
+    align-items: start;
   }
 }
 
@@ -179,7 +190,7 @@
     background-color: $base-color;
     position: absolute;
     z-index: -1;
-    left: 21px;
+    left: 20px;
     top: 24px;
     border-radius: 50%;
   }
@@ -209,7 +220,7 @@
   font-weight: 400;
   margin: 0;
   padding-top: 6px;
-  padding-left: 70px;
+  padding-left: 71px;
   padding-bottom: 29px;
   color: #000000;
 
@@ -230,7 +241,7 @@
   padding: 24px 20px 18px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 77px;
+    padding-top: 71px;
     padding-left: 53px;
     padding-bottom: 57px;
   }
@@ -293,6 +304,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 27px;
+    width: 460px;
   }
 }
 
@@ -300,7 +312,7 @@
   @include link-default;
   line-height: 16px;
   color: #000000;
-  margin-top: 15px;
+  margin-top: 18px;
   display: inline-block;
   position: relative;
 
@@ -310,7 +322,7 @@
     background-color: #000000;
     width: 32px;
     height: 12px;
-    right: -47px;
+    right: -49px;
     top: 2px;
     position: absolute;
   }
@@ -331,8 +343,12 @@
     margin: 0;
 
     &::after {
-      right: -57px;
+      right: -58px;
       top: 9px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    letter-spacing: 0.1px;
   }
 }

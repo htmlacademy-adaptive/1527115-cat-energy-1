@@ -9,23 +9,41 @@
 }
 
 .radio__input[type="radio"] + .form__control-mark {
-  background-image: url("../img/sprite.svg#radiobutton");
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
 }
 
 .radio__input[type="radio"]:checked + .form__control-mark {
-  background-image: url("../img/sprite.svg#radiobutton-active");
+  &::after {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-color: $base-color;
+    position: absolute;
+    left: calc(15px - 26%);
+    top: calc(15px - 26%);
+    border-radius: 50%;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      width: 18px;
+      height: 18px;
+      left: calc(20px - 26%);
+      top: calc(20px - 26%);
+    }
+  }
 }
 
 .radio__input[type="radio"] + .form__control-mark:hover {
-  background-image: url("../img/sprite.svg#radiobutton-hover");
+  border-color: #bababa;
 }
 
-.radio__input[type="radio"]:checked + .form__control-mark:hover {
-  background-image: url("../img/sprite.svg#radiobutton-active-hover");
-}
-
-.radio__input[type="radio"]:disabled + .form__control-mark {
+.radio__input[type="radio"]:disabled + .form__control-mark,
+.radio__input[type="radio"]:disabled ~ .radio__name {
+  border-color: #bababa;
   opacity: 0.3;
+  cursor: default;
 }
 
 .radio__input[type="radio"]:focus-visible + .form__control-mark {
@@ -35,5 +53,9 @@
 
 .radio__name {
   display: inline-block;
-  padding-left: 60px;
+  padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
 }

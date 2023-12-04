@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 74px;
+    margin-top: 10px;
   }
 }
 
@@ -23,14 +23,16 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 42px;
     border-top: none;
-    padding-bottom: 70px;
+    padding-bottom: 71px;
+    align-items: start;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    column-gap: 80px;
     padding-bottom: 76px;
   }
 }
