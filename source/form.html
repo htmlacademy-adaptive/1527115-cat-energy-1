@@ -9,6 +9,9 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -22,7 +25,7 @@
       <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="main-nav main-nav__noscript">
+      <nav class="main-nav main-nav--noscript">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="index.html">
@@ -161,9 +164,9 @@
             <p>Санкт-Петербург</p>
           </div>
         </div>
-        <div class="contacts__map-wrapper map map__noscript">
+        <div class="contacts__map-wrapper map map--noscript">
           <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6060550146617!2d30.322028159305766!3d59.93867885442228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1698498294061!5m2!1sru!2sru"
-          width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Адрес компании ул. Большая Конюшенная, д. 19/8, Санкт-Петербург"></iframe>
         </div>
       </section>
     </main>

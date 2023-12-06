@@ -4,11 +4,11 @@
 
   &::before {
     content: "";
-    width: 100%;
+    width: 100vw;
     height: 302px;
-    background-color: $base-color;
+    background-color: #64a63b;
     position: absolute;
-    right: 0;
+    right: calc(50% - 50vw);
     top: 0;
     z-index: -2;
   }
@@ -22,14 +22,13 @@
   @media (min-width: $desktop-width) {
     &::before {
       content: "";
-      background-color: $base-color;
       background-image: url("../img/bg-cat-desktop.jpg");
       background-repeat: no-repeat;
       background-size: 1041px auto;
-      background-position: right -321px top;
-      width: 720px;
+      background-position: left top;
+      width: 50vw;
       height: 694px;
-      right: 0;
+      left: calc(50%);
       top: -114px;
     }
   }
@@ -114,6 +113,7 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 52px;
     padding-left: 80px;
+    max-width: 450px;
   }
 }
 

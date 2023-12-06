@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-.svg {
+.show-more__svg {
   background-image: url("../img/sprite.svg#plus");
   background-position: right top;
   background-repeat: no-repeat;
@@ -35,14 +35,6 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 40px;
-  }
-}
-
-.show-more__wrapper svg {
-  padding-bottom: 23px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 50px;
   }
 }
 
