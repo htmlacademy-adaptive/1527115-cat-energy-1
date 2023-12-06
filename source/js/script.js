@@ -1,9 +1,9 @@
 let navToggle = document.querySelector(".main-header__toggle");
 
 const jsWorked = function () {
-  document.querySelector(".main-nav").classList.toggle("main-nav__noscript");
+  document.querySelector(".main-nav").classList.toggle("main-nav--noscript");
   navToggle.classList.add("main-header__toggle--closed");
-  document.querySelector(".map").classList.remove("map__noscript");
+  document.querySelector(".map").classList.remove("map--noscript");
 };
 
 jsWorked();
